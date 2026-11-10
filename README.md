@@ -89,3 +89,10 @@ Do not create empty abstraction layers solely to match this sketch.
 ## Current status
 
 Planning and learning structure established. Application implementation has not started yet.
+
+## Continuous integration
+
+Pull requests and main pushes run formatting checks, `go vet ./...`,
+`go test ./...` and `go build ./...` on GitHub-hosted runners using `go.mod`.
+This validates the existing learning project; it adds no service aggregation,
+container release or production deployment.
